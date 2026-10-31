@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Studio - Member Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="auth-card">
+
+            <h1>NOVA<span>.</span></h1>
+            <p class="subtitle">Welcome to your digital space</p>
+
+            <div class="tabs">
+                <button id="loginTab" class="active">Login</button>
+                <button id="signupTab">Sign Up</button>
+            </div>
+
+            <form id="authForm">
+
+                <div id="nameGroup" class="hidden">
+                    <label for="name">Full Name</label>
+                    <input id="name" type="text"
+                        placeholder="Apna naam likhein">
+                </div>
+
+                <label for="email">Email Address</label>
+                <input id="email" type="email"
+                    placeholder="you@example.com" required>
+
+                <label for="password">Password</label>
+                <input id="password" type="password"
+                    placeholder="Password likhein"
+                    minlength="8" required>
+
+                <button type="submit" id="submitBtn">
+                    Login
+                </button>
+
+                <p id="authMessage" role="status"></p>
+            </form>
+
+            <div id="dashboard" class="hidden">
+                <h2>Welcome! 🎉</h2>
+                <p id="welcomeText"></p>
+                <button id="logoutBtn">Logout</button>
+            </div>
+
+            <p class="footer-text">Nova Studio Learning Project</p>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
